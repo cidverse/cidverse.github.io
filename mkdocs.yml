@@ -1,0 +1,56 @@
+site_name: CID Documentation
+site_description: Documentation of github.com/cidverse
+use_directory_urls: true
+
+repo_url: https://github.com/cidverse/cid
+edit_uri: https://github.com/cidverse/cidverse.github.io/edit/main/docs
+
+theme:
+  locale: en
+  name: material
+  # light / dark mode
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - index.md
+  - Actions:
+      - action/index.md
+      - action/sdk-go.md
+      - action/sdk-java.md
+      - action/sdk-kotlin.md
+  - NormalizeCI:
+      - normalizeci/index.md
+      - normalizeci/spec.md
+  - Repository Analyzer:
+      - repoanalyzer/index.md
+
+markdown_extensions:
+  - attr_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_css:
+  - stylesheets/content.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/cidverse/cid
+      name: GitHub
