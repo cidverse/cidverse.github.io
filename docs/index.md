@@ -8,7 +8,7 @@
 
     - Platform Agnostic - You can use the same workflow that is running in CI to test/run the project locally.
     - Fast Feedback - Rather than having to commit/push/wait every time you want to test out the changes you are making to your continuous integration and deployment process, you can run your workflow locally.
-    - Testing - Actions can be written in real programming languages and be properly tested.
+    - Testing - Actions can be written in programming languages with test coverage.
 
 ## How does it work?
 

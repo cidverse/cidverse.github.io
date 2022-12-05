@@ -9,6 +9,8 @@ You can easily create your own actions by using one of our SDKs.
 - [SDK - Go](sdk-go.md)
 - [SDK - Java](sdk-java.md)
 - [SDK - Kotlin](sdk-kotlin.md)
+- [SDK - Python](sdk-python.md)
+- ...
 
 ## Start from Scratch
 
@@ -19,16 +21,19 @@ Your actions require the following capabilities:
 - implement the API (see the [openapi-spec]() to generate a client in your language of choice)
 - communicate with the api using http or via unix socket
 
-## Action Design Guidelines
+## Design Guidelines
+
+### Command Execution
+
+If your action requires other cli tools to execute commands, it is best practice to use the command-api to execute them in standalone containers.
 
 ### Artifacts
 
 Generated artifacts should be placed in `<artifact_dir>/<module.slug>/<artifact_type>`
 
-- artifact_dir can be read from the configuration using the sdk
-- module.slug can be read from the module list using the sdk
-- the artifact_type needs to be set appropriately, see the following table:
-
+- `artifact_dir` can be read from the configuration using the sdk
+- `module.slug` can be read from the module list using the sdk
+- `artifact_type` needs to be set according to the following table:
 
 | TYPE        | DESC                                                                          |
 |-------------|-------------------------------------------------------------------------------|
