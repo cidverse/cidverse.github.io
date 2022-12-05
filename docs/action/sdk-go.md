@@ -2,32 +2,38 @@
 
 ## Getting Started
 
-``` go title="node-build.go"
-type BuildConfig struct {
-}
+### Installation
 
-func BuildAction() (err error) {
-    // init sdk
+``` bash
+go get -u github.com/cidverse/cid-sdk-go
+```
+
+### SDK Documentation
+
+- [github.com/cidverse/cid-sdk-go](https://github.com/cidverse/cid-sdk-go)
+- [pkg.go.dev/github.com/cidverse/cid-sdk-go](https://pkg.go.dev/github.com/cidverse/cid-sdk-go)
+
+### Example
+
+!!! note "Notes"
+
+    - actions should be packaged as cli applications and exit with a error code if execution failed for any reason
+
+``` go title="node-build.go"
+func main() {
+	// init sdk
     sdk, err := cidsdk.NewSDK()
     if err != nil {
-        return fmt.Errorf("Fatal: Failed to initialize SDK: %s", err.Error())
+        fmt.Printf("Fatal: Failed to initialize SDK: %s", err.Error())
+        os.Exit(1)
     }
 
     // query project context (current module, env, config, ...)
-	cfg := BuildConfig{}
-	ctx, err := sdk.ModuleAction(&cfg)
+	ctx, err := sdk.ModuleAction(nil)
 	if err != nil {
-		return err
+        fmt.Printf("Fatal: Failed to query project metadata: %s", err.Error())
+        os.Exit(1)
 	}
-
-    // run `yarn install` to download all dependencies
-    _, err = sdk.ExecuteCommand(cidsdk.ExecuteCommandRequest{
-        Command: `yarn install`,
-        WorkDir: ctx.Module.ModuleDir,
-    })
-    if err != nil {
-        return err
-    }
 
     // run `yarn build` to build the project
     _, err = sdk.ExecuteCommand(cidsdk.ExecuteCommandRequest{
@@ -35,9 +41,8 @@ func BuildAction() (err error) {
         WorkDir: ctx.Module.ModuleDir,
     })
     if err != nil {
-        return err
+        fmt.Printf("Fatal: Command execution failed: %s", err.Error())
+        os.Exit(1)
     }
-
-	return nil
 }
 ```
