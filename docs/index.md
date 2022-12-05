@@ -1,10 +1,12 @@
-# Overview
+# CIDVerse
+
+CIDVerse is a collection of projects that aim to provide a platform-agnostic ci process.
 
 ## Introduction
 
 `CrossAction` allows you to compose your CI/CD workflow using platform-agnostic reusable actions.
 
-!!! note "What benefits does this have?"
+!!! note "Benefits"
 
     - Platform Agnostic - You can use the same workflow that is running in CI to test/run the project locally.
     - Fast Feedback - Rather than having to commit/push/wait every time you want to test out the changes you are making to your continuous integration and deployment process, you can run your workflow locally.
@@ -14,7 +16,7 @@
 
 `CrossAction` contains the following modules to make creating actions or workflows easy:
 
-### WorkflowEngine
+### Workflow
 
 ``` mermaid
 sequenceDiagram

@@ -34,10 +34,12 @@ nav:
       - workflow/index.md
   - Action:
       - action/index.md
+      - action/catalog.md
       - action/sdk-go.md
       - action/sdk-java.md
       - action/sdk-kotlin.md
       - action/sdk-python.md
+      - action/design-guideline.md
   - NormalizeCI:
       - normalizeci/index.md
       - normalizeci/spec.md
