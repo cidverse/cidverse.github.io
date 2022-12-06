@@ -30,6 +30,9 @@ theme:
 
 nav:
   - index.md
+  - CrossAction:
+      - crossaction/index.md
+      - crossaction/installation.md
   - Workflow:
       - workflow/index.md
   - Action:
@@ -45,6 +48,10 @@ nav:
       - normalizeci/spec.md
   - Repository Analyzer:
       - repoanalyzer/index.md
+  - Container Images:
+      - container-images/index.md
+      - container-images/cli-image.md
+      - container-images/base-image.md
 
 markdown_extensions:
   - attr_list
