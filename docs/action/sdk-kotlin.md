@@ -7,13 +7,13 @@
 === "Gralde - Kotlin DSL"
 
     ``` kotlin
-    implementation("io.github.cidverse:cid-sdk-java:0.0.3")
+    implementation("io.github.cidverse:cid-sdk-java:0.0.4")
     ```
 
 === "Gralde - Groovy DSL"
 
     ``` groovy
-    implementation 'io.github.cidverse:cid-sdk-java:0.0.3'
+    implementation 'io.github.cidverse:cid-sdk-java:0.0.4'
     ```
 
 === "Maven"
@@ -22,7 +22,7 @@
     <dependency>
         <groupId>io.github.cidverse</groupId>
         <artifactId>cid-sdk-java</artifactId>
-        <version>0.0.3</version>
+        <version>0.0.4</version>
     </dependency>
     ```
 

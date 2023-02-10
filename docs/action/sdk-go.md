@@ -15,6 +15,8 @@ go get -u github.com/cidverse/cid-sdk-go
 
 ### Example
 
+Most of the official cid actions are built using go, you can take a look at this project for more complex examples here: [https://github.com/cidverse/cid-actions-go](https://github.com/cidverse/cid-actions-go)
+
 !!! note "Notes"
 
     - actions should be packaged as cli applications and exit with a error code if execution failed for any reason

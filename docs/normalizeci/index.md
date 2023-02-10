@@ -4,7 +4,7 @@
 
 `NormalizeCI` is a cli tool (and go library) which can normalize the provided env variables from ci platforms as a foundation for a platform-agnostic CICD processes.
 
-!!! note "What benefits does this have?"
+!!! note "Merits"
 
     - *normalization* - check the env vars and the local repository to provide a common set of env vars for scripts that work with any ci platform.
     - *compatibility* - convert the common env vars into a specific format (ie. gitlab) to run a script made for gitlab on any ci provider.
@@ -53,4 +53,4 @@
 
 !!! note "Contribute?"
 
-    - If you want to contribute, feel free to pick one of the following services and add a package to normalize their variables.
+    - If you want to contribute, feel free to pick one of the planned systems to work on an implementation.

@@ -24,20 +24,32 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     #- navigation.sections
-    #- navigation.indexes
+    - navigation.indexes
     - navigation.top
+    - navigation.expand
     - content.tabs.link
 
 nav:
   - index.md
-  - CrossAction:
-      - crossaction/index.md
-      - crossaction/installation.md
-  - Workflow:
-      - workflow/index.md
+  - CID:
+      - cid/index.md
+      - cid/action.md
+      - cid/workflow.md
+      - Usage:
+        - cid/usage/local.md
+        - cid/usage/githubactions.md
+        - cid/usage/gitlab.md
+      - Workflows:
+        - cid/workflows/index.md
+        - cid/workflows/main.md
+      - Customize:
+        - cid/customize/action.md
+        - cid/customize/workflow.md
+      - cid/enterprise.md
   - Action:
       - action/index.md
       - action/catalog.md
+      - action/rules.md
       - action/sdk-go.md
       - action/sdk-java.md
       - action/sdk-kotlin.md
