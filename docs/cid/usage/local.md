@@ -18,8 +18,8 @@ Once `CID` is installed, you can run actions or workflows using the `cid` comman
 
 For more examples on how to run actions or workflows, see the following guides:
 
-- [action](../action.md)
-- [workflow](../workflow.md)
+- [action](../customize/action.md)
+- [workflow](../customize/workflow.md)
 
 ## Examples
 
@@ -32,4 +32,4 @@ cid workflow run --stage build
 cid workflow run --stage test
 ```
 
-Check out the [main workflow documentation](../ready-to-use/main.md) for more details.
+Check out the [main workflow documentation](../workflows/main.md) for more details.

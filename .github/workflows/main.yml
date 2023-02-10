@@ -25,7 +25,7 @@ jobs:
       - name: prepare environment
         uses: cidverse/ghact-cid-setup@main
         with:
-          version: experimental
+          version: latest
       - name: checkout
         uses: actions/checkout@v3
         with:

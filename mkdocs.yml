@@ -33,8 +33,6 @@ nav:
   - index.md
   - CID:
       - cid/index.md
-      - cid/action.md
-      - cid/workflow.md
       - Usage:
         - cid/usage/local.md
         - cid/usage/githubactions.md
