@@ -40,9 +40,10 @@ nav:
       - Workflows:
         - cid/workflows/index.md
         - cid/workflows/main.md
-      - Customize:
-        - cid/customize/action.md
-        - cid/customize/workflow.md
+      - Config:
+        - cid/config/workflow.md
+        - cid/config/repository.md
+        - cid/config/action.md
       - cid/enterprise.md
   - Action:
       - action/index.md
