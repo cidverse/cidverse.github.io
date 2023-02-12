@@ -63,6 +63,9 @@ nav:
       - container-images/index.md
       - container-images/cli-image.md
       - container-images/base-image.md
+  - Contribution:
+      - contribution/index.md
+      - contribution/coc.md
 
 markdown_extensions:
   - attr_list
