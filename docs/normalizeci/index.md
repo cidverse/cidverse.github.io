@@ -1,31 +1,42 @@
-# Overview
+# NormalizeCI
 
 ## Introduction
 
-`NormalizeCI` is a cli tool (and go library) which can normalize the provided env variables from ci platforms as a foundation for a platform-agnostic CICD processes.
+`NormalizeCI` is a go library and specification to normalize the provided environment information from ci platforms, to provide a foundation for a platform-agnostic CI-CD workflows and actions.
+`NormalizeCI` also provides a binary release to set the normlaized envirnoment locally.
 
 !!! note "Merits"
 
     - *normalization* - check the env vars and the local repository to provide a common set of env vars for scripts that work with any ci platform.
-    - *compatibility* - convert the common env vars into a specific format (ie. gitlab) to run a script made for gitlab on any ci provider.
+    - *compatibility* - convert from the common `NCI_` spec into a specific format (ie. GitHub Actions) as a compatiblity layer to run GitHub Actions on other platforms
+    - *testability* - the local git module can provide all required information to test / use your ci workflows locally
 
 ## How does it work?
 
-- NormalizeCI defines a global standard for CI/CD variables (COMMIT_HASH, ...), as such only `NCI_` variables should be used in actions to ensure cross-platform support.
-- Even if your platform is not yet officialy supported (see [here](https://github.com/cidverse/normalizeci#supported-systems)) the default git module will still provide all required information (also when running your ci process locally)
+- NormalizeCI defines a global standard for CI/CD variables (COMMIT_HASH, ...), as such only `NCI_` variables should be used in actions to ensure cross-platform support
+- Even if your platform is not yet officialy supported (see [here](https://github.com/cidverse/normalizeci#supported-systems)), the default local module can extract almost all required information from your local repository (even when running your ci process locally)
+
+## Usage
+
+- [CLI](usage/cli.md)
+- [Library](usage/library.md)
 
 ## Supported Platforms
 
-| NAME                                                                                       | SLUG             |
-|--------------------------------------------------------------------------------------------|------------------|
-| [Azure DevOps Pipeline](https://github.com/cidverse/normalizeci/tree/main/pkg/azuredevops) | `azure-devops`   |
-| [GitLab CI/CD](https://github.com/cidverse/normalizeci/tree/main/pkg/gitlabci)             | `gitlab-ci`      |
-| [GitHub Actions](https://github.com/cidverse/normalizeci/tree/main/pkg/githubactions)      | `github-actions` |
-| [Local Git Repository](https://github.com/cidverse/normalizeci/tree/main/pkg/localgit)     | `local`          |
+| NAME                                             | SLUG             | Normalize | Denormalize | Features |
+|--------------------------------------------------|------------------|-----------|-------------|----------|
+| [Generic - Git](platform/generic-git.md)         | `local`          | yes       |             |          |
+| [Azure DevOps Pipeline](platform/azuredevops.md) | `azure-devops`   | yes       | no          |          |
+| [GitLab CI/CD](platform/gitlabci.md)             | `gitlab-ci`      | yes       | no          | inputs   |
+| [GitHub Actions](platform/githubactions.md)      | `github-actions` | yes       | no          | inputs   |
+
+Some Normalizer's can also query the API of the build system for additional information, the following features might be available:
+
+- `inputs` - information about custom user variables set for a specific ci run
 
 !!! note "Not Supported?"
 
-    - the `Local Git Repository` can also provide all required information on unsupported / planned ci platforms!
+    - NormalizeCI will fallback to the `local repository` to extract most information from the local repository on unsupported ci platforms!
 
 ## Planned Platforms
 

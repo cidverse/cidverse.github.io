@@ -57,6 +57,14 @@ nav:
   - NormalizeCI:
       - normalizeci/index.md
       - normalizeci/spec.md
+      - Usage:
+        - normalizeci/usage/cli.md
+        - normalizeci/usage/library.md
+      - Platform:
+        - normalizeci/platform/generic-git.md
+        - normalizeci/platform/azuredevops.md
+        - normalizeci/platform/githubactions.md
+        - normalizeci/platform/gitlabci.md
   - Repository Analyzer:
       - repoanalyzer/index.md
   - Container Images:

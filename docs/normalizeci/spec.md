@@ -66,10 +66,6 @@
 | repository | `NCI_COMMIT_TITLE`                   | 1.0.0    | feat: add new feature                    | commit title                     |
 | repository | `NCI_COMMIT_DESCRIPTION`             | 1.0.0    | added a new feature                      | commit description               |
 | repository | `NCI_COMMIT_COUNT`                   | 1.0.0    | 1341                                     | total commit count               |
-| repository | `NCI_LASTRELEASE_REF_NAME`           | 1.0.0    |                                          |                                  |
-| repository | `NCI_LASTRELEASE_REF_SLUG`           | 1.0.0    |                                          |                                  |
-| repository | `NCI_LASTRELEASE_REF_VCS`            | 1.0.0    |                                          |                                  |
-| repository | `NCI_LASTRELEASE_COMMIT_AFTER_COUNT` | 1.0.0    |                                          |                                  |
 
 ## Control
 

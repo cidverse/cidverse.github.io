@@ -9,7 +9,7 @@
 
 ## Getting Started
 
-To use `CID` for local testing or on a CI provider, please pick the appropriate guide from the following list:
+To use `CID` for local testing or on a CI platform, please pick the appropriate guide from the following list:
 
 1. [Local](usage/local.md)
 2. [GitHub Actions](usage/githubactions.md)
