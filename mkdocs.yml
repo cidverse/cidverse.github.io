@@ -8,13 +8,16 @@ edit_uri: https://github.com/cidverse/cidverse.github.io/edit/main/docs
 theme:
   locale: en
   name: material
+  font: false
   # light / dark mode
   palette:
-    - scheme: default
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -71,6 +74,17 @@ nav:
       - container-images/index.md
       - container-images/cli-image.md
       - container-images/base-image.md
+  - Development:
+      - development/overview.md
+      - development/pullrequest.md
+      - Conventions:
+        - development/convention/commits.md
+        - development/convention/versioning.md
+      - Guides:
+        - development/guide/github.md
+        - development/guide/gitlab.md
+        - development/guide/renovate.md
+        - development/guide/sonarcloud.md
   - Contribution:
       - contribution/index.md
       - contribution/coc.md
@@ -90,6 +104,9 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true 
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 extra_css:
   - stylesheets/content.css

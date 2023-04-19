@@ -2,7 +2,7 @@
 
 Enterprise environments often have unique requirements such as a proxy or self-signed certificates.
 
-You will need to configure this once for `CID`, this information will be passed along to all other tools used within the CI workflow.
+With `CID` you can configure these settings in a few simple steps globally for all tools used within the CI workflow.
 
 ## Certificates
 

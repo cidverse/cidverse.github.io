@@ -10,3 +10,8 @@
 .md-typeset table:not([class]) {
   display: table;
 }
+
+/* link color */
+.md-content {
+  --md-typeset-a-color: #FFA500;
+}

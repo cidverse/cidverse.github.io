@@ -18,4 +18,4 @@ normalized := normalizer.Normalize()
 env := ncispec.ToMap(normalized)
 ```
 
-Also see: https://pkg.go.dev/github.com/cidverse/normalizeci/pkg/normalizeci
+Public API: [pkg.go.dev/github.com/cidverse/normalizeci/pkg/normalizeci](https://pkg.go.dev/github.com/cidverse/normalizeci/pkg/normalizeci)

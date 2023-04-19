@@ -4,8 +4,8 @@
 
 !!! note "Benefits"
 
-    - Prebuilt Workflows - We provide fully usable CI workflows, that should be able to build, test and publish all kinds of projects.
-    - Extensible - CID was designed to be flexible and extensible, allowing users to customize their CI process to fit their specific needs.
+    - Prebuilt Workflows - We provide fully prebuilt CI workflows, that can build, test and publish projects that follow common conventions.
+    - Extensible - CID was designed to be flexible and extensible, allowing users to customize the CI process to fit their specific needs.
 
 ## Getting Started
 

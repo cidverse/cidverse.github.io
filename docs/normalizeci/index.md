@@ -14,7 +14,7 @@
 ## How does it work?
 
 - NormalizeCI defines a global standard for CI/CD variables (COMMIT_HASH, ...), as such only `NCI_` variables should be used in actions to ensure cross-platform support
-- Even if your platform is not yet officialy supported (see [here](https://github.com/cidverse/normalizeci#supported-systems)), the default local module can extract almost all required information from your local repository (even when running your ci process locally)
+- Even if your platform is not yet officialy supported, the default local module can extract information from your local repository (also when running / testing your ci process locally)
 
 ## Usage
 
@@ -23,12 +23,12 @@
 
 ## Supported Platforms
 
-| NAME                                             | SLUG             | Normalize | Denormalize | Features |
-|--------------------------------------------------|------------------|-----------|-------------|----------|
-| [Generic - Git](platform/generic-git.md)         | `local`          | yes       |             |          |
-| [Azure DevOps Pipeline](platform/azuredevops.md) | `azure-devops`   | yes       | no          |          |
-| [GitLab CI/CD](platform/gitlabci.md)             | `gitlab-ci`      | yes       | no          | inputs   |
-| [GitHub Actions](platform/githubactions.md)      | `github-actions` | yes       | no          | inputs   |
+| NAME                                             | SLUG             | Supported            | Normalize | Denormalize | Features |
+|--------------------------------------------------|------------------|----------------------|-----------|-------------|----------|
+| [Generic - Git](platform/generic-git.md)         | `local`          | :material-check:     | yes       |             |          |
+| [Azure DevOps Pipeline](platform/azuredevops.md) | `azure-devops`   | :material-check-all: | yes       | no          |          |
+| [GitLab CI/CD](platform/gitlabci.md)             | `gitlab-ci`      | :material-check-all: | yes       | no          | inputs   |
+| [GitHub Actions](platform/githubactions.md)      | `github-actions` | :material-check-all: | yes       | no          | inputs   |
 
 Some Normalizer's can also query the API of the build system for additional information, the following features might be available:
 
