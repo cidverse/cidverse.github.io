@@ -6,6 +6,6 @@
 
 ## Conventions
 
-- [Commit Messages](../development/commits.md)
-- [Versioning](../development/versioning.md)
+- [Commit Messages](../development/convention/commits.md)
+- [Versioning](../development/convention/versioning.md)
 - [Pull Request](../development/pullrequest.md)

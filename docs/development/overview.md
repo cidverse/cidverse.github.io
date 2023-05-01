@@ -19,8 +19,8 @@ We have provided guides on how to configure your repository. Follow the links be
 
 In addition, we recommend following these conventions for your project:
 
-- :material-source-commit: [Commit Messages](commits.md)
-- :material-git: [Versioning](versioning.md)
+- :material-source-commit: [Commit Messages](convention/commits.md)
+- :material-git: [Versioning](convention/versioning.md)
 - :octicons-git-pull-request-24: [Pull Request](pullrequest.md)
 
 ## Threats
