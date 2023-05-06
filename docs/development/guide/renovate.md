@@ -22,8 +22,17 @@ You can use our preset in your repository by adding a `renovate.json` file to yo
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>philippheuer/renovate-config:preset-global"
+    "github>cidverse/renovate-config:default"
   ],
   "baseBranches": ["main"]
 }
+```
+
+To assign reviewers to the merge request you can add the following to your `renovate.json` file.
+
+
+``` json title="renovate.json"
+...
+  "assignees": ["your_username"]
+...
 ```
