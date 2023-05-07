@@ -8,12 +8,6 @@
 
 To use `CID` with GitLab, add the following step to the beginning of each job in your pipeline:
 
-```yaml
-
-```
-
-## Examples
-
 ``` yaml title=".gitlab-ci.yml"
 stages:
   - build

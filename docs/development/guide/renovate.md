@@ -33,6 +33,6 @@ To assign reviewers to the merge request you can add the following to your `reno
 
 ``` json title="renovate.json"
 ...
-  "assignees": ["your_username"]
+  "reviewers": ["your_username"]
 ...
 ```
