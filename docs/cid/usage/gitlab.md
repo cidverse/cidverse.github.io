@@ -6,7 +6,9 @@
 
 ## Installation
 
-To use `CID` with GitLab, add the following step to the beginning of each job in your pipeline:
+You can use one of the [prebuilt workflows](../../catalog/workflows) by using this snippet. You are able to customize the used workflow by setting the `name` in `cid-workflow: <name>`.
+
+TODO: provide a ci template for gitlab
 
 ``` yaml title=".gitlab-ci.yml"
 stages:

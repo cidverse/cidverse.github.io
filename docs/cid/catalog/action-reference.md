@@ -1,26 +1,30 @@
-# Action Catalog
+# Action Reference
 
-## Catalog Items
+The catalog contains a list of actions that can be used in workflows.
 
-The action catalog is a yaml file that contains a list of available actions:
+## Overview
 
 ``` yaml
-- repository: central
-  name: techdocs-start
+actions:
+- name: mkdocs-build
+  category: build
+  description: |
+    Build the mkdocs documentation.
   type: container
   container:
     image: quay.io/cidverse/cid-actions-go:latest
-    command: central run techdocs-start
+    command: central run mkdocs-build
   scope: module
   rules:
   - type: cel
-    expression: MODULE_BUILD_SYSTEM == "mkdocs" && MODULE_BUILD_SYSTEM_SYNTAX == "mkdocs-techdocs"
+    expression: MODULE_BUILD_SYSTEM == "mkdocs"
 ```
 
-- this configures the `techdocs-start` action
+- this configures the `mkdocs-build` action
+- the `category` and `description` are used for documentation purposes
 - the type is `container`, as such the specified `container.image` will be started with `container.command`
-- `container.image` is the image the action is shipped in
-- `container.command` is the cli command used to start the action, this can be used to start the right action of multiple are shipped in one image
+- `container.image` is the image the action is executed in
+- `container.command` is the cli command used to start the action, this can be used to start the right action if multiple are shipped in one image
 - the scope is set to module, evaluation of the rules will run for each discovered project module individually
 - the rules control if the action will be executed
 
@@ -34,7 +38,6 @@ Supported Types:
 ### Type: Container
 
 If the requirements are met, then the container specified in the `container` field will be started with the provided `image` and `command`.
-
 
 ## Rules
 
@@ -60,5 +63,5 @@ Example:
 ``` yaml
   rules:
   - type: cel
-    expression: MODULE_BUILD_SYSTEM == "mkdocs" && MODULE_BUILD_SYSTEM_SYNTAX == "mkdocs-techdocs"
+    expression: MODULE_BUILD_SYSTEM == "mkdocs"
 ```

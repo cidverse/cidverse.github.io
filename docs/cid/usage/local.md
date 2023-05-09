@@ -32,4 +32,4 @@ cid workflow run --stage build
 cid workflow run --stage test
 ```
 
-Check out the [main workflow documentation](../workflows/main.md) for more details.
+Check out the [main workflow documentation](../catalog/workflows/main.md) for more details.

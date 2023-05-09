@@ -6,7 +6,7 @@
 
 ## Workflows
 
-You can use one of the [prebuilt workflows](../../workflows) by using this snippet. You are able to customize the used workflow by setting the `name` in `cid-workflow: <name>`.
+You can use one of the [prebuilt workflows](../../catalog/workflows) by using this snippet. You are able to customize the used workflow by setting the `name` in `cid-workflow: <name>`.
 
 In addition you can add `secrets` to toggle conditional actions that require credentials.
 If you want to publish github pages please include the `job-pages: true` parameter.

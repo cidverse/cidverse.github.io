@@ -18,7 +18,7 @@ To use `CID` for local testing or on a CI platform, please pick the appropriate 
 
 ## Shared Workflows
 
-Check out the getting started section first, you will be able to use all of the [prebuilt workflows](workflows).
+Check out the getting started section first, you will be able to use all of the [prebuilt workflows](catalog/workflows).
 
 ## Features
 

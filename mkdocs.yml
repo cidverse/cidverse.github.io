@@ -40,23 +40,63 @@ nav:
         - cid/usage/local.md
         - cid/usage/githubactions.md
         - cid/usage/gitlab.md
-      - Workflows:
-        - cid/workflows/index.md
-        - cid/workflows/main.md
       - Config:
         - cid/config/workflow.md
         - cid/config/repository.md
         - cid/config/action.md
       - cid/enterprise.md
-  - Action:
-      - action/index.md
-      - action/catalog.md
-      - action/rules.md
-      - action/sdk-go.md
-      - action/sdk-java.md
-      - action/sdk-kotlin.md
-      - action/sdk-python.md
-      - action/design-guideline.md
+      - Actions:
+        - cid/extension/action.md
+        - cid/extension/rules.md
+        - cid/extension/sdk-go.md
+        - cid/extension/sdk-java.md
+        - cid/extension/sdk-kotlin.md
+        - cid/extension/sdk-python.md
+  - CID Catalog:
+    - cid/catalog/action-reference.md
+    - Workflows:
+        - cid/catalog/workflows/index.md
+        - cid/catalog/workflows/main.md
+    - Actions:
+      - cid/catalog/actions/index.md
+      - cid/catalog/actions/applicationinspector-scan.md
+      - cid/catalog/actions/buildah-build.md
+      - cid/catalog/actions/buildah-publish.md
+      - cid/catalog/actions/changelog-generate.md
+      - cid/catalog/actions/cosign-container-sbom-attach.md
+      - cid/catalog/actions/cosign-container-sign.md
+      - cid/catalog/actions/gitguardian-scan.md
+      - cid/catalog/actions/github-release-publish.md
+      - cid/catalog/actions/github-sarif-upload.md
+      - cid/catalog/actions/gitlab-release-publish.md
+      - cid/catalog/actions/gitleaks-scan.md
+      - cid/catalog/actions/go-build.md
+      - cid/catalog/actions/go-lint.md
+      - cid/catalog/actions/go-test.md
+      - cid/catalog/actions/gosec-scan.md
+      - cid/catalog/actions/helm-build.md
+      - cid/catalog/actions/helm-lint.md
+      - cid/catalog/actions/helm-publish-nexus.md
+      - cid/catalog/actions/helm-publish-registry.md
+      - cid/catalog/actions/hugo-build.md
+      - cid/catalog/actions/java-build.md
+      - cid/catalog/actions/java-publish.md
+      - cid/catalog/actions/java-test.md
+      - cid/catalog/actions/mkdocs-build.md
+      - cid/catalog/actions/node-build.md
+      - cid/catalog/actions/node-test.md
+      - cid/catalog/actions/ossf-scorecard-scan.md
+      - cid/catalog/actions/python-build.md
+      - cid/catalog/actions/python-lint.md
+      - cid/catalog/actions/python-test.md
+      - cid/catalog/actions/qodana-scan.md
+      - cid/catalog/actions/semgrep-scan.md
+      - cid/catalog/actions/sonarqube-scan.md
+      - cid/catalog/actions/syft-artifact-sbom-generate.md
+      - cid/catalog/actions/syft-container-sbom-generate.md
+      - cid/catalog/actions/techdocs-build.md
+      - cid/catalog/actions/techdocs-publish.md
+      - cid/catalog/actions/upx-optimize.md
   - NormalizeCI:
       - normalizeci/index.md
       - normalizeci/spec.md
