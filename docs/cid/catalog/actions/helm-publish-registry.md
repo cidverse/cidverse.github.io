@@ -13,5 +13,5 @@ One or multiple of the following rules must be satisfied for the action to be ex
 
 | Property | Description |
 |---|---|
-| `HELM_OCI_REPOSITORY` | The url of the OCI registry for the chart publication. |
+| `HELM_OCI_REPOSITORY`* | The url of the OCI registry for the chart publication. |
 

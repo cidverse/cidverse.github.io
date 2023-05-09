@@ -3,13 +3,11 @@
 ## Prerequisites
 
 - A GitHub account and repository are required to use `CID` with GitHub Actions.
+- We recommend following our [GitHub](../../development/guide/github) guide to securely configure your project. (all guides are available [here](../../development/overview)
 
-## Workflows
+## Setup
 
-You can use one of the [prebuilt workflows](../../catalog/workflows) by using this snippet. You are able to customize the used workflow by setting the `name` in `cid-workflow: <name>`.
-
-In addition you can add `secrets` to toggle conditional actions that require credentials.
-If you want to publish github pages please include the `job-pages: true` parameter.
+Add the following file to your project:
 
 ``` yaml title=".github/workflows/ci.yml"
 # name
@@ -57,3 +55,23 @@ jobs:
       SONAR_ORGANIZATION: ${{ secrets.SONAR_ORGANIZATION }}
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 ```
+
+## Workflow
+
+CID offers multiple workflows to build and test your project, in addition to the default workflow, `main`, which is used in the example above. 
+To use a different workflow, replace `main` with the name of the workflow you want to use. (`cid-workflow: <name>`.)
+
+A list of available workflows can be found [here](../../catalog/workflows).
+
+## Secrets
+
+You can view the actions that are part of a workflow by opening the workflow file in the [catalog](../../catalog/workflows).
+Some actions are conditinal and require secrets to be set, these are documented in the action page.
+
+## Deployment Environments
+
+By default version tags (`v*`) are built in the `production` environment, while the main branch is built in the `development` environment. You can use `environments` to use different deployment targets per environment.
+
+## Pages
+
+Due to GitHub API limitations, you need to set the `job-pages: true` parameter to toggle conditinal jobs that publish github pages.

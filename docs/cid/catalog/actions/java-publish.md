@@ -7,13 +7,14 @@ Publishes the java module to the configured maven repository.
 
 One or multiple of the following rules must be satisfied for the action to be executed.
 
-- `MODULE_BUILD_SYSTEM == "gradle"`- `MODULE_BUILD_SYSTEM == "maven"`
+- `MODULE_BUILD_SYSTEM == "gradle" && getMapValue(ENV, "MAVEN_REPO_URL") != ""`
+- `MODULE_BUILD_SYSTEM == "maven" && getMapValue(ENV, "MAVEN_REPO_URL") != ""`
 
 ## Configuration
 
 | Property | Description |
 |---|---|
-| `MAVEN_REPO_URL` | The URL of the maven repository to publish to. |
+| `MAVEN_REPO_URL`* | The URL of the maven repository to publish to. |
 | `MAVEN_REPO_USERNAME` | The username to use for authentication with the maven repository. |
 | `MAVEN_REPO_PASSWORD` | The password to use for authentication with the maven repository. |
 | `GPG_SIGN_KEYID` | The GPG key ID to use for signing the artifacts. |

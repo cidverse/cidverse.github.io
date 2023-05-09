@@ -3,6 +3,7 @@
 ## Prerequisites
 
 - A GitLab account and repository are required to use `CID` with GitLab.
+- We recommend following our [GitLab](../../development/guide/gitlab) guide to securely configure your project. (all guides are available [here](../../development/overview)
 
 ## Installation
 

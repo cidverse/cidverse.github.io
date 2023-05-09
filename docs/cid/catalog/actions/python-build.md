@@ -7,7 +7,9 @@ Builds the python project.
 
 One or multiple of the following rules must be satisfied for the action to be executed.
 
-- `MODULE_BUILD_SYSTEM == "python-requirements.txt"`- `MODULE_BUILD_SYSTEM == "pipfile"`- `MODULE_BUILD_SYSTEM == "setup.py"`
+- `MODULE_BUILD_SYSTEM == "python-requirements.txt"`
+- `MODULE_BUILD_SYSTEM == "pipfile"`
+- `MODULE_BUILD_SYSTEM == "setup.py"`
 
 ## Configuration
 

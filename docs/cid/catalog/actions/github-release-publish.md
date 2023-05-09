@@ -13,5 +13,5 @@ One or multiple of the following rules must be satisfied for the action to be ex
 
 | Property | Description |
 |---|---|
-| `GITHUB_TOKEN` | The GitHub token to use for creating the release. |
+| `GITHUB_TOKEN`* | The GitHub token to use for creating the release. |
 

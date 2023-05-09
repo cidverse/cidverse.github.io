@@ -1,6 +1,6 @@
 # github-sarif-upload
 
-Uploads the SARIF file to GitHub CodeScanning.
+Uploads all SARIF reports to GitHub CodeScanning. Supports merge requests.
 
 
 ## Rules
@@ -13,5 +13,5 @@ One or multiple of the following rules must be satisfied for the action to be ex
 
 | Property | Description |
 |---|---|
-| `GITHUB_TOKEN` | The GitHub token to use for uploading the SARIF file. |
+| `GITHUB_TOKEN`* | The GitHub token to use for uploading the SARIF file. |
 

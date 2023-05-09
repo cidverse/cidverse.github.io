@@ -39,6 +39,7 @@ It contains the following stages, with conditional actions based on the project 
 ## Stage: publish
 
 - [buildah-publish](../actions/buildah-publish.md)
+- [java-publish](../actions/java-publish.md)
 - [helm-publish-nexus](../actions/helm-publish-nexus.md)
 - [helm-publish-registry](../actions/helm-publish-registry.md)
 - [techdocs-publish](../actions/techdocs-publish.md)
