@@ -3,7 +3,7 @@
 ## Prerequisites
 
 - A GitHub account and repository are required to use `CID` with GitHub Actions.
-- We recommend following our [GitHub](../../development/guide/github) guide to securely configure your project. (all guides are available [here](../../development/overview)
+- We recommend following our [GitHub](../../../development/guide/github) guide to securely configure your project. (all guides are available [here](../../../development/overview)
 
 ## Setup
 
@@ -70,8 +70,12 @@ Some actions are conditinal and require secrets to be set, these are documented 
 
 ## Deployment Environments
 
-By default version tags (`v*`) are built in the `production` environment, while the main branch is built in the `development` environment. You can use `environments` to use different deployment targets per environment.
+By default version tags (`v*`) are built in the `production` environment, while the main branch is built in the `development` environment.
+
+You can create both environments with different secrets to deploy your `production` and `development` artifacts to different targets. (for example `production` to mavenCentral and `development` to GitHub Packages)
 
 ## Pages
 
-Due to GitHub API limitations, you need to set the `job-pages: true` parameter to toggle conditinal jobs that publish github pages.
+Due to GitHub API limitations, you need to set the `job-pages: true` parameter to toggle conditional jobs that publish to github pages.
+
+This will become obsolete once GitHub provides an official api to upload job artifacts to GitHub Actions.
