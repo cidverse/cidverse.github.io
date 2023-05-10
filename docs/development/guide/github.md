@@ -35,6 +35,7 @@ This will ensure that tags can only be created by authorized users.
 - Enable `Private vulnerability reporting`
 - Set `Code scanning` -> `Pull request check failure` set to `Medium or higher / only errors` to evaluate sarif uploads from the ci pipeline.
 - Enable `Secret scanning` to receive alerts on GitHub for detected secrets, keys, or other tokens that get commited into your repository accidentally.
+- Enable `Secret scanning` -> `Push protection` to prevent secrets from being pushed to your repository.
 
 ## Dependency Updates
 
