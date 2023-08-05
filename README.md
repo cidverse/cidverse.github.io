@@ -1,15 +1,14 @@
 # CIDVerse Documentation
 
-## Contribution
-
-### Build
+## Build
 
 ```bash
 cid workflow run --stage build
 ```
+## Contribute
 
-### Test
+If you want to contribute to this project, please read the [contribution guidelines](https://cidverse.github.io/contribution/).
 
-```bash
-cid workflow run --stage start
-```
+## License
+
+Released under the [MIT License](./LICENSE).
