@@ -10,11 +10,25 @@ on:
     tags:
       - 'v*.*.*'
     paths-ignore:
-      - ".gitignore"
-      - ".editorconfig"
+      - README.md
+      - LICENSE
+      - .github/**
+      - .gitignore
+      - .editorconfig
+      - renovate.json
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - README.md
+      - LICENSE
+      - .github/**
+      - .gitignore
+      - .editorconfig
+      - renovate.json
 
 jobs:
-  check:
+  cid:
     uses: cidverse/catalog/.github/workflows/shared-ci.yml@main
     with:
       cid-workflow: main
